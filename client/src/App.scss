@@ -1,3 +1,13 @@
 .players-list {
     font-weight: 900;
+    display: flex;
+    flex-flow: row wrap;
+
+    .player {
+        margin: 1rem;
+        padding: 1rem;
+        border: 1px solid red;
+        width: 10rem;
+        height: 5rem;
+    }
 }

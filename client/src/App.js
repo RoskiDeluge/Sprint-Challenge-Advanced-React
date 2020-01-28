@@ -24,7 +24,7 @@ class App extends React.Component {
         <div className="players-list">
           {this.state.players &&
             this.state.players.map(play => {
-              return <div>{play.name}</div>;
+              return <div className="player">{play.name}</div>;
             })}
         </div>
       </div>
