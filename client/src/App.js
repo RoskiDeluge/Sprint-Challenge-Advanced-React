@@ -21,8 +21,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App"> 
-        <Navbar />
         <div className="players-list">
+          <Navbar />
           {this.state.players &&
             this.state.players.map(play => {
               return <div className="player">{play.name}</div>;
