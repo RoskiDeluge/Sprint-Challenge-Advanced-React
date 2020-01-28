@@ -15,3 +15,10 @@ test("Toggle switch", () => {
 
   getByTestId("dark-mode__toggle");
 });
+
+// Test not passing:
+// test("Players rendering", () => {
+//   const { getByTestId } = render(<App />);
+
+//   getByTestId("player-rendering");
+// });

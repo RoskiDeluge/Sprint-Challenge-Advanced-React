@@ -25,7 +25,7 @@ class App extends React.Component {
           <Navbar />
           {this.state.players &&
             this.state.players.map(play => {
-              return <div className="player">{play.name}</div>;
+              return <div data-testid="player-rendering" className="player">{play.name}</div>;
             })}
         </div>
       </div>
