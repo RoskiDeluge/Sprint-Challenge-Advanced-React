@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.scss";
+import Navbar from './components/Navbar';
 
 class App extends React.Component {
   state = {
@@ -19,9 +20,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <h1>Women's World Cup Players</h1>
-        <h2>ranked by search interest from Google Trends, June-July 2019</h2>
+      <div className="App"> 
+        <Navbar />
         <div className="players-list">
           {this.state.players &&
             this.state.players.map(play => {
