@@ -1,0 +1,24 @@
+.dark-mode {
+    color: #fff;
+    background-color: #313843;
+  
+    .navbar {
+      background-color: #1F2022;
+      border: none;
+    }
+  }
+
+.players-list {
+    font-weight: 900;
+    display: flex;
+    flex-flow: row wrap;
+
+    .player {
+        margin: 1rem;
+        padding: 1rem;
+        border: 1px solid red;
+        border-radius: .5rem;
+        width: 10rem;
+        height: 5rem;
+    }
+}
