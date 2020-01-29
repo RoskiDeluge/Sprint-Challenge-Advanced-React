@@ -20,12 +20,12 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App"> 
-        <div className="players-list">
-          <Navbar />
+      <div className="App">
+        <Navbar /> 
+        <div data-testid="player-rendering" className="players-list">
           {this.state.players &&
             this.state.players.map(play => {
-              return <div data-testid="player-rendering" className="player">{play.name}</div>;
+              return <div className="player">{play.name}</div>;
             })}
         </div>
       </div>

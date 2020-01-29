@@ -16,9 +16,25 @@ test("Toggle switch", () => {
   getByTestId("dark-mode__toggle");
 });
 
-// Test not passing:
-// test("Players rendering", () => {
-//   const { getByTestId } = render(<App />);
+test("Players rendering", () => {
+  const { getByTestId } = render(<App />);
 
-//   getByTestId("player-rendering");
-// });
+  getByTestId("player-rendering");
+});
+
+test("contains Logo", () => {
+  // ARRANGE
+  const expectedLogoElements = 1;
+  // const { getByText, getAllByText } = render(<App />);
+  const container = render(<Navbar />);
+  const getByText = container.getByText;
+  const getAllByText = container.getAllByText;
+  //  console.log(container);
+
+  // ACT
+  // getByText("Women's World Cup Players"); 
+  const logoElements = getAllByText(/women's world cup players/i);
+
+  // ASSERT
+  expect(logoElements.length).toBe(expectedLogoElements);
+});
